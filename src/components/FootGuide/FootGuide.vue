@@ -55,6 +55,8 @@
     box-sizing border-box
     display flex
     background #fff
+    span
+      font-weight 300
     .guideItem
       width 25%
       height 100%
@@ -62,11 +64,11 @@
       display flex
       flex-direction column
       &.active
-        color $green
+        color $red
       span:first-child
         margin 5px 0
         i
-          font-size 34px
+          font-size 44px
           line-height 54px
  
 </style>
