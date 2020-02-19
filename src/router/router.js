@@ -37,7 +37,7 @@ export default [
     path: '/Profile',
     component: Profile,
     meta: {
-      isShowFooter:true
+      isShowFooter:false
     }
   },
   {

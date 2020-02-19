@@ -1,6 +1,6 @@
 <template>
   <div>
-    WorthBuy
+    
   </div>
 </template>
 

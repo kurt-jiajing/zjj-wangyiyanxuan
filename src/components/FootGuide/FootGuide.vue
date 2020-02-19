@@ -28,7 +28,7 @@
       <span>
         <i class="iconfont icon-people"></i>
       </span>
-      <span>我的</span>
+      <span>个人</span>
     </div>
   </div>
 </template>
@@ -37,7 +37,8 @@
   export default {
     methods:{
       goPath(path){
-        this.$router.push(path)
+        path !== this.$route.path && this.$router.push(path)
+        
       }
     }
   }

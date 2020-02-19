@@ -2,7 +2,7 @@
   <div id="appContainer">
     
     <router-view></router-view>
-    <FooterGuide/>
+    <FooterGuide v-show="$route.meta.isShowFooter"/>
   </div>
 </template>
 

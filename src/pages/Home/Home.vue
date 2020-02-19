@@ -1,49 +1,71 @@
 <template>
-  <div id="indexHd">
-    <div class="line">
-      <h1>
-        <a class="logo" href="">
-          <img src="../../common/images/logo.jpg" alt="">
-        </a>
-      </h1>
-      <div class="topSearch">
-
+  <div>
+    <!-- <div id="indexHd">
+      <div class="line">
+        <h1>
+          <a class="logo" href>
+            <img src="../../common/images/logo.jpg" alt />
+          </a>
+        </h1>
+        <div class="topSearch">
+          <i class="iconfont icon-search"></i>
+          <span class="placeholder">搜索商品, 共20413款好物</span>
+        </div>
       </div>
-    </div>
-    <div class="tabwrap">
-
+      <div class="tabwrap">
+        <ul class="navList">
+          <li>
+            <span>推荐</span>
+          </li>
+          <li>
+            <span>居家生活</span>
+          </li>
+          <li>
+            <span>服饰鞋包</span>
+          </li>
+          <li>
+            <span>美食酒水</span>
+          </li>
+          <li>
+            <span>个护清洁</span>
+          </li>
+          <li>
+            <span>母婴亲子</span>
+          </li>
+          <li>
+            <span>运动旅行</span>
+          </li>
+          <li>
+            <span>数码家电</span>
+          </li>
+          <li>
+            <span>全球特色</span>
+          </li>
+        </ul>
+      </div>
+    </div> -->
+    <YXHeader/>
+    <div class="swiper">
+      
     </div>
   </div>
 </template>
 
 <script type="text/ecmascript-6">
-  export default {
+import BScroll from "better-scroll";
+import Swiper from "swiper";
+import "swiper/css/swiper.min.css";
+export default {
+  mounted() {
+    new BScroll(".tabwrap", {
+      scrollX: true
+    });
 
+    var mySwiper = new Swiper()
   }
+};
 </script>
 
 <style lang="stylus">
-  #indexHd
-    width 100%
-    height 160px
-    background pink 
-    border-bottom 1px solid #d9d9d9
-    .line
-      width 100%
-      height 88px
-      background white
-      display flex
-      flex-direction row
-      justify-content center
-      img
-        width 144px
-        height 40px
-        margin 25px 20px 0 26px
-      .topSearch
-        width 523px
-        height 56px
-        background #ededed
-        border-radius 5px
-        margin-top 16px
- 
+
 </style>
