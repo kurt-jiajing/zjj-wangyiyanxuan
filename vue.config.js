@@ -14,5 +14,18 @@ module.exports = {
         ]
       }
     }
-},
+  },
+  devServer: {//配置代理
+    proxy: {
+      '/api': {
+        target: '<url>',
+        ws: true,
+        changeOrigin: true,
+        //
+        pathRewrite: {
+          '^/api': ''
+        }
+      }
+    }
+  }
 }

@@ -42,14 +42,23 @@
           </li>
         </ul>
       </div>
-      <div @click="showNav" class="toggleWrap">
-          <i class="iconfont icon-unfold"></i>
+      <div class="toggleWrap">
+          <i class="iconfont icon-unfold" @click="isShowCard=true"></i>
+      </div>
+      <div class="card">
+
       </div>
   </div>
 </template>
 
 <script type="text/ecmascript-6">
   export default {
+    data(){
+      return{
+        isShowCard: false,
+
+      }
+    }
     // props: {
     //   title: {
     //     required: true,
@@ -92,6 +101,7 @@
       span 
         font-size: 28px;
         color: #666666;
+  
   .toggleWrap
     width 70px
     height 70px
@@ -105,6 +115,11 @@
     i 
       font-size 44px 
       color #333
+  .card
+      width 100%
+      height 312px
+      // background red
+      z-index 100
   .tabwrap 
     width: 650px;
     height: 70px;
@@ -125,4 +140,5 @@
           font-size: 28px;
           height: 70px;
           line-height: 70px;
+    
 </style>

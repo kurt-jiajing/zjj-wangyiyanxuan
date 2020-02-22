@@ -58,18 +58,20 @@
     background #fff
     span
       font-weight 300
+      font-size 30px
     .guideItem
       width 25%
       height 100%
       text-align center
       display flex
       flex-direction column
+      color #666666
       &.active
         color $red
       span:first-child
         margin 5px 0
         i
           font-size 44px
-          line-height 54px
+          line-height 48px
  
 </style>
